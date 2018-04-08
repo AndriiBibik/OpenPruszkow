@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightAmberBackground"
+    tools:context="com.example.potato.openpruszkow.OpenPruszkow">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--First menu raw-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!--Parks-->
+            <LinearLayout style="@style/menu_item_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/medium_gap"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/parks"
+                        style="@style/menu_item_style">
+
+                        <ImageView
+                            style="@style/menu_image_style"
+                            android:src="@drawable/parks_menu_item" />
+
+                        <TextView
+                            style="@style/menu_item_text_style"
+                            android:text="@string/parks" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/two_dp"
+                        android:background="@color/secondaryColor" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--Places for runners menu item-->
+            <LinearLayout style="@style/menu_item_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/medium_gap"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/places_for_runners"
+                        style="@style/menu_item_style">
+
+                        <ImageView
+                            style="@style/menu_image_style"
+                            android:src="@drawable/places_runners_menu_item" />
+
+                        <TextView
+                            style="@style/menu_item_text_style"
+                            android:text="@string/pl_for_runners" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/two_dp"
+                        android:background="@color/secondaryColor" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Second menu raw-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!--Go for exercises-->
+            <LinearLayout style="@style/menu_item_parent">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/medium_gap"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/exercises"
+                        style="@style/menu_item_style">
+
+                        <ImageView
+                            style="@style/menu_image_style"
+                            android:src="@drawable/exercises_menu_item" />
+
+                        <TextView
+                            style="@style/menu_item_text_style"
+                            android:text="@string/exercises" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/two_dp"
+                        android:background="@color/secondaryColor" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--Eat. have fun-->
+            <LinearLayout style="@style/menu_item_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/medium_gap"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/eat_fun"
+                        style="@style/menu_item_style">
+
+                        <ImageView
+                            style="@style/menu_image_style"
+                            android:src="@drawable/eat_fun_menu_item" />
+
+                        <TextView
+                            style="@style/menu_item_text_style"
+                            android:text="@string/eat_fun" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/two_dp"
+                        android:background="@color/secondaryColor" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
